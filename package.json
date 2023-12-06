@@ -1,0 +1,15 @@
+{
+  "name": "react-drawer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "storybook:dev": "turbo run storybook"
+  },
+  "devDependencies": {
+    "turbo": "^1.11.0"
+  }
+}
