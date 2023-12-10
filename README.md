@@ -6,19 +6,19 @@ A headless, small and simple drawer component for react
 
 ```bash
 #with npm
-npm install react-drawer-component
+npm install react-headless-drawer
 
 #with pnpm
-pnpm add react-drawer-component
+pnpm add react-headless-drawer
 
 #with yarn
-yarn add react-drawer-component
+yarn add react-headless-drawer
 ```
 
 ## Example Usage
 
 ```tsx
-import { Drawer, useDrawer } from "react-drawer-component";
+import { Drawer, useDrawer } from "react-headless-drawer";
 import { GripHorizontal } from "lucide-react";
 
 const App = () => {

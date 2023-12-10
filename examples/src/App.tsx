@@ -37,15 +37,15 @@ const App = () => {
         <span className="text-zinc-100">With npm:</span>
         <code className="bg-zinc-900 text-lime-300 p-4 border-zinc-700 border rounded-lg">
           <span className="select-none">$ </span>npm install
-          react-drawer-component
+          react-headless-drawer
         </code>
         <span className="text-zinc-100">With pnpm:</span>
         <code className="bg-zinc-900 text-lime-300 p-4 border-zinc-700 border rounded-lg">
-          <span className="select-none">$ </span>pnpm add react-drawer-component
+          <span className="select-none">$ </span>pnpm add react-headless-drawer
         </code>
         <span className="text-zinc-100">With yarn:</span>
         <code className="bg-zinc-900 text-lime-300 p-4 border-zinc-700 border rounded-lg">
-          <span className="select-none">$ </span>yarn add react-drawer-component
+          <span className="select-none">$ </span>yarn add react-headless-drawer
         </code>
       </article>
       <Drawer.Provider {...drawer}>
