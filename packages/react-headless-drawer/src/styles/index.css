@@ -1,0 +1,7 @@
+.react-headless-drawer_drawer {
+  position: relative;
+}
+.react-headless-drawer_handle {
+  cursor: pointer;
+  user-select: none;
+}

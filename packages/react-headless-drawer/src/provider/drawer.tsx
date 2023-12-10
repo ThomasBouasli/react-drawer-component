@@ -18,7 +18,7 @@ export type UseDrawerProps = {
   onOpen?: () => void;
   onClose?: () => void;
   onDrag?: () => void;
-  draggable: boolean;
+  draggable?: boolean;
   position: "left" | "right" | "top" | "bottom";
   spring?: SpringConfig;
 };

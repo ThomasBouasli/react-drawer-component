@@ -1,9 +1,8 @@
 import React, { forwardRef, useContext } from "react";
 
-import { twMerge } from "tailwind-merge";
 import { animated } from "@react-spring/web";
 
-import "../styles/tailwind.css";
+import "../styles/index.css";
 import { DrawerContext, UseDrawerReturn } from "../provider/drawer";
 
 const Provider = ({
@@ -49,7 +48,7 @@ const Root = ({
   return (
     <animated.div
       id="drawer"
-      className={twMerge("relative will-change-transform", className)}
+      className={`react-headless-drawer_drawer ${className}`}
       ref={drawerRef}
       style={style}
       {...props}
@@ -66,7 +65,7 @@ const Handle = ({
   return (
     <div
       id="drawer-handle"
-      className={twMerge(className, "cursor-pointer select-none")}
+      className={`react-headless-drawer_handle ${className}`}
       ref={drawerHandleRef}
       {...props}
     />
@@ -77,14 +76,7 @@ const Content = forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => {
-  return (
-    <div
-      id="drawer-content"
-      className={twMerge(className)}
-      ref={ref}
-      {...props}
-    />
-  );
+  return <div id="drawer-content" className={className} ref={ref} {...props} />;
 });
 
 Content.displayName = "Content";
