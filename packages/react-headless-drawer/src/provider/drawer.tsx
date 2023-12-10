@@ -18,6 +18,7 @@ export type UseDrawerProps = {
   onOpen?: () => void;
   onClose?: () => void;
   onDrag?: () => void;
+  draggable: boolean;
   position: "left" | "right" | "top" | "bottom";
   spring?: SpringConfig;
 };
@@ -50,7 +51,7 @@ export const useDrawerProvider = () => {
   return useContext(DrawerContext);
 };
 
-export const useDrawer = (props: UseDrawerProps) => {
+export const useDrawer = ({ draggable = true, ...props }: UseDrawerProps) => {
   const containerRef = createRef<HTMLDivElement>();
   const drawerRef = createRef<AnimatedComponent<"div"> & HTMLDivElement>();
   const drawerHandleRef = createRef<HTMLDivElement>();
@@ -268,14 +269,14 @@ export const useDrawer = (props: UseDrawerProps) => {
   }, []);
 
   useEffect(() => {
-    window.addEventListener("pointermove", handleMouseDrag);
+    if (!draggable) window.addEventListener("pointermove", handleMouseDrag);
     window.addEventListener("touchmove", handleTouchDrag);
 
     return () => {
       window.removeEventListener("pointermove", handleMouseDrag);
       window.removeEventListener("touchmove", handleTouchDrag);
     };
-  }, [handleMouseDrag]);
+  }, [handleMouseDrag, draggable]);
 
   useEffect(() => {
     window.addEventListener("pointerup", handleMouseUp);
