@@ -17,7 +17,7 @@ yarn add react-drawer-component
 
 ## Example Usage
 
-```typescript
+```tsx
 import { Drawer, useDrawer } from "react-drawer-component";
 import { GripHorizontal } from "lucide-react";
 
