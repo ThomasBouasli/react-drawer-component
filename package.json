@@ -15,7 +15,6 @@
     "build:example": "turbo run build --filter example"
   },
   "devDependencies": {
-    "lerna": "^8.0.0",
     "turbo": "^1.11.0"
   }
 }
