@@ -1,4 +1,4 @@
-import { Drawer, useDrawer } from "react-drawer-component";
+import { Drawer, useDrawer } from "react-headless-drawer";
 import { GripHorizontal } from "lucide-react";
 
 const App = () => {

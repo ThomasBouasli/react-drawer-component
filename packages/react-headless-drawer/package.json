@@ -1,5 +1,5 @@
 {
-  "name": "react-drawer-component",
+  "name": "react-headless-drawer",
   "version": "0.0.0",
   "description": "A headless react drawer component",
   "main": "dist/index.js",
