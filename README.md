@@ -1,5 +1,8 @@
 # React Drawer Component
 
+> [!NOTE]  
+> Shadcn created a drawer component that is significantly better... just use that XD.
+
 A headless, small and simple drawer component for react
 
 ## Installation
